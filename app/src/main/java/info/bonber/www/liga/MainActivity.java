@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
         //AsyncHttpClient client = new AsyncHttpClient();
         String url="http://bonber.info/liga/liga.php";
         WebView view = (WebView) this.findViewById(R.id.navegador);
-        view.loadDataWithBaseURL(null, "<center>Cargando el contenido...</center>", "text/html", "UTF-8", null);
+        view.loadDataWithBaseURL(null, "Cargando el contenido...", "text/html", "UTF-8", null);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
         view.loadUrl(url); //try js alert
