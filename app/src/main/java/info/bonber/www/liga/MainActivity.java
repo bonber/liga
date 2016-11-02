@@ -68,33 +68,6 @@ public class MainActivity extends AppCompatActivity
         view.loadUrl(url); //try js alert
         view.setWebChromeClient(new WebChromeClient()); // adding js alert support
 
-        /*client.post(url, new AsyncHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                if (statusCode == 200){
-                    setContentView(R.layout.activity_main);
-                    //Descargar contenido
-                    String resultado= new String(responseBody);
-                    TextView texto = (TextView)findViewById(R.id.txtContenido);
-                    texto.setText(Html.fromHtml(resultado));
-                    texto.setMovementMethod(new ScrollingMovementMethod());
-                }
-
-            }
-
-            @Override //En caso de error
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                setContentView(R.layout.activity_main);
-                TextView texto = (TextView)findViewById(R.id.txtContenido);
-                texto.setText("Error al descargar el contenido");
-                Toast toastError =
-                        Toast.makeText(getApplicationContext(),
-                                "Error en la conexión: "+statusCode, Toast.LENGTH_SHORT);
-                toastError.show();
-            }
-
-        });*/
-
     }
 
     private class MyBrowser extends WebViewClient {
