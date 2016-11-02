@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity
         //AsyncHttpClient client = new AsyncHttpClient();
         String url="http://bonber.info/liga/liga.php";
         WebView view = (WebView) this.findViewById(R.id.navegador);
+        view.loadDataWithBaseURL(null, "<center>Cargando el contenido...</center>", "text/html", "UTF-8", null);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
         view.loadUrl(url); //try js alert
@@ -174,8 +175,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_maps) {
-            Intent i = new Intent(this, CargarMapa.class );
-            startActivity(i);
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Jzxjn8"));
+            startActivity(browserIntent);
         } else if (id == R.id.nav_gallery) {
             Toast.makeText(getApplicationContext(),
                     "Galeria", Toast.LENGTH_SHORT);

@@ -21,11 +21,6 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name="info.bonber.www.liga.CargarMapa"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
 
     </application>
 
