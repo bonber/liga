@@ -57,8 +57,14 @@ public class MainActivity extends AppCompatActivity
         //web();
         descargarContenido();
 
-    }
 
+    }
+    public void EnviarCorreo(View view) {
+
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:lizarrakogaztetxea@gmail.com"));
+        startActivity(browserIntent);
+
+    }
     public void descargarContenido(){
         //Enviar parametros por post
         //AsyncHttpClient client = new AsyncHttpClient();
@@ -143,9 +149,12 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
