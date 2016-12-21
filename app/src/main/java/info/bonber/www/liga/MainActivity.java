@@ -175,6 +175,9 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_telegram) {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://telegram.me/infoliga"));
             startActivity(browserIntent);
+        }else if (id == R.id.nav_github) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/bonber/liga"));
+            startActivity(browserIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
