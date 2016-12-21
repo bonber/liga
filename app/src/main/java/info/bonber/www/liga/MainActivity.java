@@ -164,6 +164,7 @@ public class MainActivity extends AppCompatActivity
         }  else if (id == R.id.nav_inicio) {
             Toast.makeText(getApplicationContext(),
                     "Inicio", Toast.LENGTH_SHORT).show();
+            descargarContenido();
         } else if (id == R.id.nav_nosotros) {
             Toast.makeText(getApplicationContext(),
                     "Nosotr@s", Toast.LENGTH_SHORT).show();
