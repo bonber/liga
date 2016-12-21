@@ -148,7 +148,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_maps) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Jzxjn8"));
+            //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Jzxjn8"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.google.com/maps?q=Colonia%20iñigo%20arista%2013%207%20estella%2031200"));
             startActivity(browserIntent);
         } else if (id == R.id.nav_gallery) {
             Toast.makeText(getApplicationContext(),
