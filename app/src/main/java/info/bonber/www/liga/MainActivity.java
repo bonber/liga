@@ -1,10 +1,12 @@
 package info.bonber.www.liga;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
@@ -148,18 +150,22 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_maps) {
-            //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Jzxjn8"));
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.google.com/maps?q=Colonia%20iñigo%20arista%2013%207%20estella%2031200"));
             startActivity(browserIntent);
         } else if (id == R.id.nav_gallery) {
             Toast.makeText(getApplicationContext(),
-                    "Galeria", Toast.LENGTH_SHORT);
+                    "Funcion no disponible", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_inicio) {
             Toast.makeText(getApplicationContext(),
-                    "Inicio", Toast.LENGTH_SHORT);
+                    "Inicio", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_nosotros) {
             Toast.makeText(getApplicationContext(),
-                    "Nosotr@s", Toast.LENGTH_SHORT);
+                    "Nosotr@s", Toast.LENGTH_SHORT).show();
+            AlertDialog alerta;
+            alerta = new AlertDialog.Builder(this).create();
+            alerta.setTitle("Sobre Nosotr@s");
+            alerta.setMessage("Mensaje kajsdfkajwdshfl ashflkasj hflk asjhdfklj ashdflk \n ahdsf lkjashdaljkdshf kljasdhf kaljhf kaldsjh fkljashdf lkajsdfh klasjdhf lkajshd");
+            alerta.show();
         } else if (id == R.id.nav_twitter) {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/lizarrakogazte"));
             startActivity(browserIntent);

@@ -23,6 +23,10 @@
     <item android:title="Siguenos en...">
         <menu>
             <item
+                android:id="@+id/nav_telegram"
+                android:icon="@drawable/ic_menu_telegram"
+                android:title="Telegram" />
+            <item
                 android:id="@+id/nav_twitter"
                 android:icon="@drawable/ic_menu_twitter"
                 android:title="Twitter" />
