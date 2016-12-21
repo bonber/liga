@@ -11,10 +11,6 @@
             android:icon="@mipmap/ic_menu_maps"
             android:title="Donde estamos" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Galeria" />
-        <item
             android:id="@+id/nav_nosotros"
             android:icon="@drawable/ic_nosotros"
             android:title="Sobre nosotr@s" />
